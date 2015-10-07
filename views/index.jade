@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  main(ng-controller='MainController')
+    h1= title
+    p Welcome to #{title}
+    ul.assignList
+    for item in assignments
+      li.assignment {{assign.num}}
